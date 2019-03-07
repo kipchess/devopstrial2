@@ -25,4 +25,6 @@ sh "ls -l"
 }
 
 
+}stage('deploy'){
+  sh "docker run -d -p 7020 devexam:latest"
 }
